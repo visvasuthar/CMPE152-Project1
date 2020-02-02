@@ -3,8 +3,17 @@
 //
 
 #include <iostream>
+#include "Lexer.h"
+#include "Token.h"
+
+#include "Lexer.cpp"
+#include "Token.cpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    Lexer lex;
+    Token t;
+
+    std::cout << "Hello World!" << std::endl;
     return 0;
 }
