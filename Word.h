@@ -17,7 +17,7 @@ public:
     Tag tag;
     string lexeme;
     Word(string s, int tag){super::tag = tag; lexeme = s;}
-    string toString();
+    string toString() {return lexeme; }
 };
 
 #endif //CMPE152_PROJECT1_WORD_H
