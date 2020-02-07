@@ -16,7 +16,13 @@ using namespace std;
 
 class Lexer{
 public:
+    //Functions
     Lexer();
+    void readch();
+    bool readch(char c);
+    Token scan();
+
+    //Variables
     Tag tag;
     int line = 1;
     char peek = ' ';

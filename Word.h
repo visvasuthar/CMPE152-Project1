@@ -13,11 +13,14 @@ using namespace std;
 
 class Word : public Token{
 public:
+    Word();
     typedef Token super;
     Tag tag;
     string lexeme;
     Word(string s, int tag){super::tag = tag; lexeme = s;}
     string toString() {return lexeme; }
+
+    Word *AND, *OR, *eq, *ne, *le, *ge, *minus, *True, *False, *temp;
 };
 
 #endif //CMPE152_PROJECT1_WORD_H
